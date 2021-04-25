@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>O Blog da História</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <a class = "navbar-brand" href="index.html">O Blog da História</a>
+        
+        <!--Especificações do que é cada um dos atributos!!!!!
+            "aria-controls": define a relação entre os elementos, um elemento é pai e o outro filho, deve ser definido no pai, relacionando o filho; 
+            "data-target" : Define o que será exibido quando clicar na opção do menu; 
+            "data-toggle" : o que vai acontecer quando eu clicar em cima do botão, collapse, por exemplo, faz o botão expandir e retrair as opções;
+            "aria-expanded" : Flag para o navegador informando que o elemento não está expandido;
+            "aria-label" : é usado para definir uma string na tag do elemento atual.
+        -->                            
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCfg" aria-controls="navbarCfg">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCfg">
+            <ul class="navbar-nav mr-auto">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="index.html">Início</a>
+                <a class="dropdown-item" href="sobre.html">Sobre</a>
+                <a class="dropdown-item" href="posts.html">Postagens</a>
+                <div class="dropdown-divider"></div>
+                <p style="text-align: left; padding-left: 10px;"> Criado por: <br/>José Xavier<br/>UFPA - 2021</p>
+                </div>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Texto para buscar no site" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar!</button>
+            </form>
+        </div>  
+    </nav>
+
+    <div class="container-fluid" id="sobreContainer">
+        <div id="sobre_o_blog" class="text-left">
+            <br/>
+            <br/>
+            <h1>Sobre o blog</h1>
+            <h3>Aqui falaremos um pouco sobre cada um dos colaboradores do Blog!</h3>
+        </div>
+        <div class="row d-flex">
+            <div class="col-md-3">
+                <img class="figure-img" src="../img/alexandre.jpg" alt="Xandão"  style="height: 180px; width: 300px">
+                <figcaption class="figure-caption" style="font-size: 15px; margin-bottom: 5px;">
+                    Alexandre da Macedônia
+                </figcaption>
+                <p>Ele foi um importante rei da Macedônia, que viveu no século 4 a.C. Em apenas 33 anos de vida, Alexandre, o Grande – também conhecido como Alexandre Magno ou Alexandre III -, formou um enorme império, que ia do sudeste da Europa até a Índia. Por isso, ele é considerado o maior líder militar da Antiguidade. “Com só 18 anos, Alexandre iniciou sua fulminante carreira de vitórias, boa parte delas sobre o grande Império Persa”, diz a arqueóloga clássica Maria Beatriz Borba Florenzano, da Universidade de São Paulo (USP). Quando assumiu o trono da Macedônia, em 336 a.C., Alexandre tratou de manter e ampliar um poderoso exército deixado por seu pai, rei Filipe II. Mas para isso precisou ir atrás das riquezas de outros povos, principalmente dos persas, iniciando uma vitoriosa campanha militar na qual contou com o apoio de algumas cidades-estados da Grécia</p>
+            </div>
+            <div class="col-md-3">
+                <img class="figure-img" src="../img/th.jfif" alt="imperador" style="height: 250px; width: 300px">
+                <figcaption class="figure-caption" style="font-size: 15px; margin-bottom: 5px;">
+                    Júlio Cesar, imperador de Roma
+                </figcaption>
+                <p>Caio Júlio César (13 de julho de 100 a.C. – 15 de março de 44 a.C.) foi um patrício, líder militar e político romano. Desempenhou um papel crítico na transformação da República Romana no Império Romano. Muito da historiografia das campanhas militares de César foi escrita por ele próprio ou por fontes contemporâneas dele, a maioria, cartas e discursos de Cícero e manuscritos de Salústio. Sua biografia foi posteriormente melhor escrita pelos historiadores Suetônio e Plutarco. César é considerado por muitos acadêmicos como um dos maiores comandantes militares da história.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="figure-img" src="../img/atila.jpg" alt="o_huno" style="height: 180px; width: 300px">
+                <figcaption class="figure-caption" style="font-size: 15px; margin-bottom: 5px;">
+                        Átila, o Huno, Conquistador Mongol
+                </figcaption>
+                <p>Átila (em latim: Attila, em grego clássico: Ἀττίλα; Panônia, c. 400 – março de 453) frequentemente referido como Átila, o Huno, foi rei dos hunos e chefe de uma confederação tribal de hunos e povos germânicos e iranianos, que governou o maior império europeu de seu tempo, cujo território se estendia do sul da atual Alemanha, no oeste, até o rio Ural, no leste; e do mar Báltico, no norte, até o mar Negro, no sul. Durante seu reinado, levou a cabo uma política agressiva de cobrança de tributos e eventualmente de intervenção militar em reinos vizinhos, que viria a torna-lo um dos inimigos mais temidos dos impérios romanos Ocidental e Bizantino.</p>
+            </div>
+                <div class="col-md-2">
+                    <div class="text-right" style="font-size: 15px;">
+                        <p>Postagens do blog</p>
+                        <ul class="list-group"> 
+                            <!--Javascript provavelmente entraria aqui, iterando sobre uma lista/matriz e exibindo a quantida de postagens por mês/ano-->
+                            <li class="list-group-item"><a href="">Abril(2021)(10)</a></li>
+                            <li class="list-group-item"><a href="">Março(2021)(6)</a></li>
+                            <li class="list-group-item"><a href="">Fevereiro(2021)(1)</a></li>
+                            <li class="list-group-item"><a href="">Janeiro(2021)(12)</a></li>
+                            <li class="list-group-item"><a href="">Dezembro(2020)(7)</a></li>
+                            <li class="list-group-item"><a href="">Novembro(2020)(8)</a></li>
+                            <li class="list-group-item"><a href="">Outubro(2020)(9)</a></li>
+                            <li class="list-group-item"><a href="">Setembro(2020)(19)</a></li>
+                            <li class="list-group-item"><a href="">Agosto(2020)(11)</a></li>
+                            <li class="list-group-item"><a href="">Julho(2020)(14)</a></li>
+                            <li class="list-group-item"><a href="">Junho(2020)(5)</a></li>
+                            <li class="list-group-item"><a href="">Maio(2020)(16)</a></li>
+                            <li class="list-group-item"><a href="">Abril(2020)(10)</a></li>
+                            <li class="list-group-item"><a href="">Março(2020)(14)</a></li>
+                            <li class="list-group-item"><a href="">Fevereiro(2020)(3)</a></li>
+                            <li class="list-group-item"><a href="">Janeiro(2020)(2)</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+        <form>
+            <br/>
+            <br/>
+            
+            <h3>    
+                Contate-nos!
+            </h3>
+            <div class="mb-3">
+                <label for="nameInput" class="form-label">Nome</label>
+                <input type="text" placeholder="Nome..." class="form-control" id="nameInput"  required>
+            </div>    
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">Entre seu e-mail</label>
+                <input type="email" placeholder="Entre com um e-mail válido..." class="form-control" id="inputEmail"  required>
+            </div>
+              <div class="mb-3">
+                <label for="wppInput" class="form-label">Whatsapp</label>
+                <input type="text" placeholder="Whatsapp" class="form-control" id="wppInput">
+              </div>
+              <div class="mb-3">
+                <label for="msgInput" class="form-label">Digite sua mensagem</label>
+                <textarea type="text" placeholder="Máximo 180 caracteres" maxlength="180" class="form-control form-control-lg" id="msgInput" style="height: 200px;"></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                  <p>Como quer ser contatado?
+                  </p>
+                  <input type="radio" id="wpp" name="whatsapp" value="Whatsapp">
+                  <label for="wpp">Whatsapp</label><br>
+                  <input type="radio" id="e-mail" name="email" value="E-mail">
+                  <label for="e-mail">E-mail</label><br>
+              </div>
+              <button class="btn btn-primary" type="submit" aria-label="btnSubmmit">Enviar</button>
+              <br>
+              <br>
+              <br>
+        </form>
+    </div>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
