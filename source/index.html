@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+      .carousel-item,
+      .carousel-inner,
+      .carousel-inner img {
+        height: 100%;
+        width: auto;
+      }
+      body #test_div { 
+
+        
+
+      }
+    </style>
+    <title>O Blog da História</title>
+  </head>
+  <body>
+  <div class="container-fluid bg-secondary text-white mt-2" id="indexMainContainer">
+    <nav class="navbar navbar-dark bg-dark sticky-top" style="background: transparent; position: fixed; top: 0; left: 0; margin: 0px; padding: 10px 70px 10px 70px; width: 100%; right: 0;">
+      <a class = "navbar-brand" href="index.html">O Blog da História</a>
+      
+      <!--Especificações do que é cada um dos atributos!!!!!
+          "aria-controls": define a relação entre os elementos, um elemento é pai e o outro filho, deve ser definido no pai, relacionando o filho; 
+          "data-target" : Define o que será exibido quando clicar na opção do menu; 
+          "data-toggle" : o que vai acontecer quando eu clicar em cima do botão, collapse, por exemplo, faz o botão expandir e retrair as opções;
+          "aria-expanded" : Flag para o navegador informando que o elemento não está expandido;
+          "aria-label" : é usado para definir uma string na tag do elemento atual.
+      -->                            
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCfg" aria-controls="navbarCfg">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCfg">
+          <ul class="navbar-nav mr-auto">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarCfg">
+              <a class="dropdown-item" href="index.html">Início</a>
+              <a class="dropdown-item" href="sobre.html">Sobre</a>
+              <div class="dropdown-divider"></div>
+              <p style="text-align: left; padding-left: 10px;"> Criado por: <br/>José Xavier<br/>UFPA - 2021</p>
+              </div>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Texto para buscar no site" aria-label="Search">
+          <button class="btn btn-primary" type="submit">Buscar!</button>
+          </form>
+      </div>  
+  </nav>
+    
+    <div class="row">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4 ml-4">
+          <div class="text-left mt-5">
+            <h2>
+              Bem vindos ao blog!
+            </h2>
+            <h4>
+              Aqui voces encontrarão o que de melhor aconteceu nas batalhas que aconteceram na história!
+            </h4>
+            <p class="text-left">
+              In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Tortor consequat id porta nibh venenatis cras sed felis eget. Etiam sit amet nisl purus in mollis nunc sed. Tristique senectus et netus et malesuada fames ac. Vitae sapien pellentesque habitant morbi tristique. In fermentum posuere urna nec. Eu consequat ac felis donec et odio pellentesque diam. Bibendum enim facilisis gravida neque convallis a cras. Consequat interdum varius sit amet mattis vulputate. Adipiscing vitae proin sagittis nisl rhoncus mattis. Ornare suspendisse sed nisi lacus sed. Etiam erat velit scelerisque in dictum. Varius quam quisque id diam. Quis viverra nibh cras pulvinar.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div id="carouselIndex" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselIndex" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselIndex" data-slide-to="1"></li>
+              <li data-target="#carouselIndex" data-slide-to="2"></li>
+              <li data-target="#carouselIndex" data-slide-to="3"></li>
+              <li data-target="#carouselIndex" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="../source/post_1.html" target="_blank">
+                 <img class="img-fluid d-block w-100" src="../img/alexandre-pic.jpg" alt="First slide">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="../source/post_2.html" target="_blank">
+                  <img class="img-fluid d-block w-100" src="../img/alexandre.jpg" alt="Second slide">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="../source/post_10.html" target="_blank">
+                  <img class="img-fluid d-block w-100" src="../img/atila.jpg" alt="Third slide">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="../source/post_10.html" target="_blank">
+                  <img class="img-fluid d-block w-100" src="../img/sobreTexto2_img.jpg" alt="Third slide">
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="../source/post_10.html" target="_blank">
+                  <img class="img-fluid d-block w-100" src="../img/sobreTexto1_img.jpg" alt="Third slide">
+                </a>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndex" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndex" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="container">
+          <!-- Page Heading -->
+          <h2 class="my-4">Postagens recentes do blog </h2>
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="card bg-dark text-white h-100">
+                <a href="post_1.html" target="_blank"><img class="card-img-top" src="../img/alexandre2.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="post_1.html" target="_blank"><small>As conquistas de Alexandre</small></a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="card bg-dark text-white h-100">
+                <a href="post_2.html" target="_blank"><img class="card-img-top" src="../img/alexandre1.jpg" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="post_2.html" target="_blank"><small>História de Alexandre o Grande</small></a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="post_3.html" target="_blank"><img class="card-img-top" src="../img/" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="post_3.html" target="_blank">Biografia de Alexandre o Grande</a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="post_4.html" target="_blank"><img class="card-img-top" src="../img/" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Project Four</a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="post_5.html" target="_blank"><img class="card-img-top" src="../img/" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="post_5.html" target="_blank">Project Five</a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="post_6.html" target="_blank"><img class="card-img-top" src="../img/" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="post_6.html" target="_blank">Project Six</a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="post_7.html" target="_blank"><img class="card-img-top" src="../img/" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Project Seven</a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="post_8.html" target="_blank"><img class="card-img-top" src="../img/" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="post_8.html" target="_blank">Project Eight</a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="post_9.html" target="_blank"><img class="card-img-top" src="../img/" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="post_9.html" target="_blank">Project Nine</a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 mb-4">
+              <div class="card h-100">
+                <a href="post_10.html" target="_blank"><img class="card-img-top" src="../img/" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="post_10.html" target="_blank">Project Ten</a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
+        
+      </div>
+  </div>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  <footer class="bg-dark text-center text-white text-lg-start">
+    <div class="container p-4">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <h5 class="text-uppercase">Universidade Federal do Pará</h5>
+          <p>
+            Página criada como requisito para a 1ª avaliação da disciplina <span class="text-lowercase">DESENVOLVIMENTO DE SOFTWARE PARA REDES DE COMPUTADORES E WEB.</span> <br/>
+            Criado por: <a class="text-white" href="https://www.instagram.com/henr_lms/">@henr_lms</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
+
